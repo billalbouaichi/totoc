@@ -1,0 +1,145 @@
+
+/* Page */
+body {
+	margin: 0;
+	background-color: #a9cfe6;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+
+
+/* Petite boite de contenus (formulaire, menus) */
+#petite_boite {
+	width: 800px;
+  margin: 0px auto;
+  padding: 30px;
+  background: #fff;
+  height: 50%;
+  background-color: #a9cfe6;
+}
+
+#petite_boite h1{
+	margin: 10px auto;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+
+/* Grande boite pour tableaux */
+#grande_boite {
+	width: 1600px;
+  margin: 0px auto;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 
+  0px 0px 20px 0px 
+  rgba(0, 0, 0, 0.2),
+  0px 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#grande_boite h1{
+	margin: 6px auto;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+
+/* Boutons */
+button {
+	background-color: #d71a30;
+  color: white;
+  padding: 14px 40px;
+  margin: 7px 0px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+
+}
+
+button:hover {
+	background-color: white;
+  color: #d71a30;
+  border: 2px solid #d71a30;
+  padding: 12px 38px;
+}
+
+#retour {
+	margin-top: 25px;
+	width: 200px;
+}
+
+
+/* Formulaire */
+#formulaire {
+  width: 750px;
+}
+
+input[type=text], input[type=password], input[type=number], input[type=date], input[type=search], input[type=time], select {
+  width: 100%;
+  padding: 8px 20px;
+  margin: 8px 0px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+textarea[type=antécédent]{
+   width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  height: 80px;
+}
+
+
+
+input[type=submit]:hover {
+  background-color: white;
+  color: #d71a30;
+  border: 2px solid #d71a30;
+  padding: 12px 38px;
+}
+
+
+/* Tableau */
+#tableau {
+	border-collapse: collapse;
+	width: 100%;
+	max-width: 1400px;
+	min-width: 700px;
+	text-align: center;
+}
+
+#tableau, #tableau th, #tableau td {
+	border: 1px solid gray;
+}
+
+#tableau th, #tableau td {
+	height: 24px;
+	padding:4px;
+	vertical-align:middle;
+}
+
+#tableau th {
+	background: #333;
+	font-weight: bold;
+	color: white;
+}
+
+#sous-menu {
+	width: 700px;
+	text-align: center;
+}
+
+#recherche {
+	width: 1400px;
+	text-align: center;
+}
+
+
+/* Icon */
+#icon {
+	padding: 3px 2px;
+	width: 18px;
+	height: 18px;
+}

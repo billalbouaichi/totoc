@@ -1,0 +1,275 @@
+body {
+    margin: 0;
+    padding: 0;
+    /*background-image: url("img/boussole.jpg");*/
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto Condensed';
+  }
+
+  #login .container #login-row #login-column #login-box {
+    margin-top: 95px;
+    margin-bottom: 50px;
+    max-width: 600px;
+    height: 450px;
+    border: none;
+    background-color: transparent;
+    background:#a9cfe6;
+    background-size: cover;
+    box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+  
+  }
+  #login .container #login-row #login-column #login-box #login-form {
+    padding: 20px;
+  }
+  #login .container #login-row #login-column #login-box #login-form #register-link {
+    margin-top: -85px;
+  }
+
+ label{
+   color: white;;
+ }
+
+ #lundi #mardi #mercredi #jeudi #vendredi #samedi #dimanche{
+     color: white;
+ }
+
+
+   /* css du menu */
+   ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    height: 60px;
+    text-align: center;
+  }
+
+  li {
+    margin : auto;
+    padding: 0;
+    float: left;
+    /*width: 170px;*/
+   
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  li a:hover {
+    /*background-color: #111;
+    height:60px;*/
+    text-decoration: none;
+    color:#a9cfe6;
+   
+  }
+
+  /* superposer le sous menu sur ce qui a en dessous */ 
+  li ul{
+    position:absolute;
+  }
+  
+
+  /*on ca che les sous items (le sous menu) */
+
+  ul li ul{
+    display:none;
+    
+  }
+
+  /* affichage du sous menu au survol */
+  ul li:hover ul{
+    display:block;
+    height: 150px;
+
+  }
+
+  ul li:hover .trait{
+    width: 210px;
+  
+  }
+
+  li:hover ul li{
+    float:none;
+    width: 210px;
+   
+  }
+  .col .links a:hover{
+    transform: translateX(-8px);
+    color:#ff014fff;
+}
+.col .contact-details{
+    display: inline-flex;
+    justify-content: space-between;
+}
+.col .contact-details i{
+    margin-right:15px;
+}footer{
+   background-color: #f9f9f7;
+     position: relative;
+     width: 100%;
+     min-height: 200px;
+     padding: 3rem 1rem;
+}
+footer .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.col{
+    min-width: 250px;
+    color:black;
+    font-family: poppins;
+    padding:0 2rem;
+}
+.col .logo{
+    width: 100px;
+    margin-bottom:25px;
+}
+.col h3{
+    color:#d71a30;
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+    font-size: 24px;
+}
+.col h3::after{
+    content: '';
+    height:3px;
+    width:0px;
+    background-color: #d71a30;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    transition: 0.3s ease;
+
+}
+.col h3:hover::after{
+    width:30px
+
+}
+.col .social a i{
+    color:#d71a30;
+    margin-top:2rem;
+    margin-right: 5px;
+    transition: 0.3s ease;
+}
+.col .social a i:hover{
+    transform: scale(1.5);
+    filter:grayscale(25);
+}
+.col .links a{
+    display: block;
+    text-decoration: none;
+      color: black;
+    margin-bottom: 5px;
+    position: relative;
+    transition: 0.3s ease;
+}
+.col .links a::before{
+    content:'';
+    height: 16px;
+    width:3px;
+    position: absolute;
+    top:5px;
+    left:-10px;
+    background-color: #d71a30;
+    transition: 0.5s ease;
+    opacity: 0;
+}
+.col .links a:hover::before{
+    opacity: 1;
+}header{
+    height: 90px;
+    padding: 0;
+    border-bottom: 1px solid white;
+     
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #f9f9f7;
+  
+}
+
+header .logo img{
+    font-size: 35px;
+    height: 100px;
+    width: 300px;
+    color: white;
+    /*margin: 0 10px;*/
+    margin-top:0;
+    margin-bottom: 60px;
+    background-color: transparent;
+   
+}
+
+header nav .nav-list{
+    list-style: none;
+    /*placer les lien de la nav sur une meme ligne */
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+    margin-top: 0;
+    position: absolute; 
+
+    
+   
+ 
+}
+
+
+
+
+header i.icon{
+    position: absolute;
+    right: 35px;
+    top: 25px;
+    z-index: 10;
+    display: none;
+}
+
+header nav .nav-list .list a{
+    display: block;
+    padding: 33px 60px;
+    /*margin: 0px 25px;*/
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    color: black;
+    /*border: 1px solid black;
+    border-radius: 5px;*/
+    height: 90px;
+    
+
+    text-align: center;
+    /*padding: 14px 16px;*/
+    text-decoration: none;
+   
+
+
+    
+}
+
+header nav .nav-list .list a:hover{
+    text-decoration: none;
+   
+    background-color: #111;
+  
+   
+    
+}
+
+  
+
+
+  
