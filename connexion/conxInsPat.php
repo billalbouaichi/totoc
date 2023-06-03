@@ -32,16 +32,33 @@
 									<button class="formButton">Connexion</button>
 								</form>
 
-								<form action="" id="registerForm" class="toggleForm">
-									<input type="text" class="form-control" placeholder="Nom d'utilisateur..." />
-									<input type="password" class="form-control" placeholder="Mot de passe..." />
-									<input type="password" class="form-control" placeholder="Confirmer mot de passe..." />
-									<label for="remember">
-										<input type="checkbox" class="form-check" id="privacy" />
+								<form action="inscriptionpat.php" id="registerForm" method="post" class="toggleForm">
+									
+								<select class="form-control" name="Civilite_Usager" style="color:black; font-weight: bold;" required>
+										<option value="">Choisir une civilité</option>
+										<option value="Mr">Monsieur</option>
+										<option value="MMe">Madame</option>
+										<option value="NR">Non renseigné</option>
+									</select>
+
+									<input type="text" class="form-control" placeholder="Nom" name="Nom_Usager" required>
+									<input type="text" class="form-control" placeholder="Prénom du patient" name="Prenom_Usager" required>
+									<input type="text" class="form-control" placeholder="Adresse de l'usager" name="Adresse_Usager" required>
+									<input type="date" class="form-control" name="Date_Naissance_Usager" required>
+									<input type="text" class="form-control" placeholder="Lieu de naissance du patient" name="Lieu_Naissance_Usager" required>
+
+									<input type="text" class="form-control" placeholder="Nom d'utilisateur..." name="Username" required>
+									<input type="password" class="form-control" placeholder="Mot de passe..." name="Password" required>
+
+									<label for="privacy">
+										<input type="checkbox" class="form-check" name="privacy" id="privacy" required>
 										J'accepte les termes de l'accord
 									</label>
-									<button class="formButton">Inscription</button>
+
+									<button type="submit" class="formButton">Inscription</button>
 								</form>
+
+
 							</div>
 						</div>
 					</div>

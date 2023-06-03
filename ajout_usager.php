@@ -28,7 +28,7 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "totoc";
-
+if (!empty($civilite) && !empty($nom) && !empty($prenom) && !empty($adresse) && !empty($dateNaissance) && !empty($lieuNaissance) && !empty($username) && !empty($password)) {
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -50,6 +50,8 @@ try {
     exit();
 } catch (PDOException $e) {
     echo "Erreur de connexion : " . $e->getMessage();
+}}else{
+    echo "completer les champs s'il vous plait";
 }
 ?>
 

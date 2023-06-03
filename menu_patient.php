@@ -156,7 +156,8 @@ foreach ($patients as $patient) {
     echo "<td>" . $patient['adresse'] . "</td>";
     echo "<td>" . $patient['date_naiss'] . "</td>";
     echo "<td>" . $patient['lieu_naiss'] . "</td>";
-	echo "<td><a href=\"menu_antecedent.php?id=" . $patient['id'] . "\"><button style=\"background: #6fcca4; border-radius: 30px; color:black;\" >Ajouter Antecedent</button></a></td>";
+	echo "<td><a href=\"menu_antecedent.php?id=" . $patient['id'] . "\"><button style=\"background: #6fcca4; border-radius: 30px; color:black;\" >Ajouter Antecedent</button></a>
+	<a href=\"afficheantecedentmed.php?id=" . $patient['id'] . "\"><button style=\"margin-top:7px; background: #7e14bc; border-radius: 30px; color:white;\" >Afficher Antecedent</button></a></td>";
 	echo "<td><a href=\"menu_ordonnace.php?id=" . $patient['id'] . "\"><button style=\"background: #5b6dcd; border-radius: 30px;\">Prescrire Ordonnance</button></a> </td>";
 
     echo "</tr>";

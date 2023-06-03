@@ -127,6 +127,7 @@ $lieuNaissance = $row['lieu_naiss'];
 
 // Fermer la connexion à la base de données
 $conn->close();}else{ 
+	$idPatient = "";
     $civilite = "";
     $nom =  "";
 $prenom = "";

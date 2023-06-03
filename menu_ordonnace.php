@@ -108,7 +108,9 @@ if ($result->num_rows > 0) {
                 }
                 
                 // Fermer la connexion à la base de données
-                $conn->close();}else{ 
+                $conn->close();}else{
+                    $idPatientt = "";
+                    $id="";
                     $civilite = "";
                     $nom =  "";
                 $prenom = "";
